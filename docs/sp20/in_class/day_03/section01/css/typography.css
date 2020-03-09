@@ -1,0 +1,17 @@
+html {
+    font-size: 20px;
+}
+
+
+div {
+    font-size: 40px;
+}
+
+
+
+p {
+    /* font-family: Arial; */
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 100;
+    text-align: center;
+}

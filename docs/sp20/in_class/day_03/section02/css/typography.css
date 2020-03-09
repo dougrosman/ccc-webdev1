@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+
+    font-size: 40px;
+}
+
+body {
+    background-color: black;
+    color: white;
+    height: 1000px;
+}
+
+p {
+    font-size: 2em;
+    text-align: center;
+    margin: 40px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    /* font-family: 'Sriracha', cursive; */
+}
+
+.box {
+    background-color: orange;
+    width: 50vw;
+    height: 50vh;
+    margin-top: 400px;
+}
+
+
+.outer-box {
+
+    width: 60%;
+    height: 60%;
+    background-color: pink;
+
+    font-size: 20px;
+
+}

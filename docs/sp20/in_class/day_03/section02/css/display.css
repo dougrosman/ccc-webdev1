@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial;
+
+}
+
+h1 {
+    font-family: Arial;
+}
+
+div {
+    background-color: purple;
+    width: 50%;
+    height: 200px;
+}
+
+a {
+    background-color: orange;
+}
+
+p {
+    display: inline-block;
+    background-color: green;
+    width: 50%;
+    height: 300px;
+}

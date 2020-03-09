@@ -1,0 +1,80 @@
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)  {
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        font-family: 'EB Garamond', serif;
+        color: rgb(5, 5, 5);
+        background-color: rgb(253, 253, 253);
+    }
+    
+    h1, h2, h3 {
+        font-weight: 400;
+        text-align: center;
+    }
+    
+    a {
+        text-decoration: none;
+        color: rgb(5, 5, 5);
+        transition: color .5s, background-color .25s;
+        border: 2px solid black;
+    }
+    
+    a:hover {
+        color: rgb(5, 90, 90);
+        background-color: rgb(255, 240, 240);
+    }
+    
+    .title {
+        margin: 1em auto .5em auto;
+        font-size: calc(2.5em + .75vw);
+        line-height: 1.2em;
+    }
+    
+    .subtitle {
+        margin: .25em 0 1em 0;
+        font-size: calc(1.5em + .75vw);
+        line-height: 1em;
+    }
+    
+    .byline {
+        margin: 0 0 2em 0;
+        font-size: calc(1em + .5vw);
+        line-height: 1em;
+    }
+    
+    #wrapper {
+        width: 100vw;
+        max-width: 900px;
+        margin: 20px auto;
+    }
+    
+    #semester-menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    
+    .class {
+        width: 100vw;
+        max-width: 200px;
+        height: 100vw;
+        max-height: 200px;
+        /* background-color: orange; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: calc(1.25em + 1vw);
+        margin: 10px;
+    }
+
+
+}

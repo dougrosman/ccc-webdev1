@@ -1,0 +1,73 @@
+/* my CSS stylesheet */
+
+p {
+    background-color: lightblue;
+    width: 50%;
+    height: 300px;
+}
+
+a {
+    background-color: purple;
+    color: lightgreen;
+    width: 500px;
+    height: 400px;
+}
+
+div {
+    display: inline-block;
+    width: 50%;
+    height: 40px;
+    background-color: pink;
+}
+
+#green-box {
+
+    position: absolute;
+    top: 30px;
+    left: 100px;
+
+    display: block;
+    background-color: green;
+    color: white;
+    width: 200px;
+    height: 200px;
+
+}
+
+#red-box {
+
+    position: relative;
+    top: 200px;
+    left: 300px;
+
+    display: block;
+    background-color: red;
+    color: white;
+    width: 200px;
+    height: 200px;
+
+}
+
+#blue-box {
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: block;
+    background-color: blue;
+    color: white;
+    width: 100px;
+    height: 100px;
+}
+
+#orange-box {
+
+    position: sticky;
+    bottom: 20px;
+    /* right: 200px; */
+    display: block;
+    background-color: orange;
+    color: white;
+    width: 100px;
+    height: 100px;
+}

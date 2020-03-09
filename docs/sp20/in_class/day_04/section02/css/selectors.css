@@ -1,0 +1,44 @@
+/* Element selectors */
+
+h1 {
+    color: orangered;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+}
+
+div {
+    width: 150px;
+    height: 150px;
+    border: 3px solid brown;
+    margin: 20px;
+    text-align: center;
+}
+
+#home-title {
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: green;
+    font-size: 4em;
+}
+
+.green {
+    background-color: green;
+}
+
+.big {
+    width: 300px;
+    height: 300px;
+}
+
+.big > p {
+    color: yellow;
+}
+
+
+
+
+
+
