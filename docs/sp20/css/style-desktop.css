@@ -23,6 +23,8 @@ h1, h2, h3 {
 
 .container {
     width: 100%;
+    border: 2px solid purple;
+    margin: 2vw auto;
 }
 
 header {
@@ -86,6 +88,27 @@ a {
     flex-wrap: wrap;
 }
 
+.no-link-style {
+    text-decoration: none;
+    color: unset;
+}
+
+#return {
+    padding: 4px;
+    font-size: 5px;
+    border: 1px solid white;
+    border-radius: 3px;
+    transition: font-size .25s;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#return:hover {
+    color: black;
+    font-size: 30px;
+}
+
 .red:hover {
     background-color: rgb(180, 0, 0);
 }
@@ -117,4 +140,13 @@ a {
 
 #learn:hover {
     color: magenta;
+}
+
+.assignment-card {
+    border-radius: 20px;
+    width: 250px;
+    height: 350px;
+    background-color: white;
+    border: 3px solid red;
+    padding: 10px;
 }

@@ -18,18 +18,12 @@ h1, h2, h3 {
 a {
     text-decoration: none;
     color: rgb(5, 5, 5);
-    transition: color .5s, background-color .25s;
-    border: 2px solid black;
-    margin: 10px;
 }
 
-a:hover {
-    color: rgb(5, 90, 90);
-    background-color: rgb(255, 240, 240);
-}
 
 .title {
     margin: 1em auto .5em auto;
+    width: max-content;
     font-size: calc(2em + 5vw);
     line-height: 1.2em;
 }
@@ -50,6 +44,7 @@ a:hover {
     width: 100vw;
     max-width: 900px;
     margin: 20px auto;
+    
 }
 
 #semester-menu {
@@ -61,14 +56,37 @@ a:hover {
 }
 
 
-.class {
-    width: 100vw;
-    max-width: 250px;
-    height: 100vw;
-    max-height: 250px;
-    /* background-color: orange; */
+.semester {
+    width: 250px;
+    height: 250px;
+    /* background-image: url("../assets/images/brick.jpg"); */
+    border: 2px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: calc(1.25em + 1vw);
+    transition: background-color .5s, color .5s;
+}
+
+.semester:hover {
+    background-color: black;
+    color: white;
+}
+
+
+/* .semester:hover:before{
+    content: '';
+    position: fixed;
+    display: block;
+    top: -200px; bottom: 0; left: 0; right: 0;
+    z-index: -1;
+    background-image: url("https://media.giphy.com/media/lT4VaAfbCv2rbUNfj1/giphy.gif");
+    background-size: cover;
+    background-color: orange;
+} */
+
+#pee {
+    display: block;
+    position: absolute;
+    height: 60px;
 }
