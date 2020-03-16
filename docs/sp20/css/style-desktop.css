@@ -1,19 +1,29 @@
+
+
+:root {
+    --light-black: rgb(25, 25, 25);
+    --dark-white: rgb(240, 240, 240);
+}
+
 * {
     padding: 0;
     margin: 0;
-    /* border: 1px dotted red; */
+    border: 2px dotted teal;
 }
 
 
 body {
-    background-color: rgb(20, 20, 20);
-    color: rgb(250, 250, 250);
+    background-color: var(--light-black);
+    color: var(--dark-white);
     font-family: 'Source Sans Pro', sans-serif;
 }
+
+
 
 h1, h2, h3 {
     font-weight: 300;
 }
+
 
 #wrapper {
     width: 90vw;
@@ -23,7 +33,6 @@ h1, h2, h3 {
 
 .container {
     width: 100%;
-    border: 2px solid purple;
     margin: 2vw auto;
 }
 
@@ -135,7 +144,7 @@ a {
 
 #learn {
     text-decoration: none;
-    margin-top: 30vh;
+    /* margin-top: 30vh; */
 }
 
 #learn:hover {
@@ -144,9 +153,35 @@ a {
 
 .assignment-card {
     border-radius: 20px;
-    width: 250px;
-    height: 350px;
+    width: 150px;
+    height: 250px;
+    
     background-color: white;
+    color: var(--light-black);
     border: 3px solid red;
     padding: 10px;
+    margin: 10px;
+
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
 }
+
+.front {
+    justify-content: center; 
+}
+.front > * {margin: 20px auto;}
+
+.back {
+    justify-content: space-between;
+}
+
+.back > div > a {
+    display: block;
+    font-size: 14px;
+    margin: 3px auto;
+    border: 2px solid var(--light-black);
+    border-radius: 5px;
+}
+
