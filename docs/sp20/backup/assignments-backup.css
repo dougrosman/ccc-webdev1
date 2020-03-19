@@ -1,9 +1,4 @@
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)  {
 
-   
 
 :root {
     --light-black: rgb(25, 25, 25);
@@ -36,7 +31,7 @@ a {
 
 #wrapper {
     width: 90vw;
-    margin: 60px auto;
+    margin: 20px auto;
     /* border: 3px solid white; */
 }
 
@@ -56,47 +51,24 @@ a {
 
 #return {
     padding: 4px;
-    font-size: 10px;
+    font-size: 8px;
     border: 1px solid white;
-    max-width: 50vw;
-    width: max-content;
+    max-width: 120px;
     border-radius: 3px;
-    transition: unset;
+    transition: font-size .25s;
     position: absolute;
-    top: 6px;
-    left: 6px;
-    /* transform: translate(-50%, -50%); */
+    top: 0;
+    left: 0;
 }
 
 #return:hover {
-    color: var(--light-black);
-    background-color: var(--dark-white);
-    font-size: 10px;
-}
-
-#preheader {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    line-height: 1em;
-}
-#preheader > a > * {
-    display: inline-block;
-    font-weight: 300;
-    width: max-content;
+    color: black;
+    font-size: 20px;
 }
 
 .container {
     width: 100%;
-    margin: 6vh auto;
-}
-
-.page-title {
-    position: sticky;
-    z-index: 4;
-    top: 0px;
-    background-color: var(--light-black);
-    width: 100%;
+    margin: 2vw auto;
 }
 
 .flex-column {
@@ -121,8 +93,7 @@ a {
     margin: 4px;
     text-decoration: none;
     color: white;
-    font-size: 1.42em;
-    flex-grow: 1;
+    font-size: 1em;
 }
 
 .menu-item:last-child {
@@ -130,8 +101,8 @@ a {
 }
 
 .menu-item:hover {
-    transition: unset;
-    background-color: unset;
+    transition: .1s;
+    background-color: rgb(250, 250, 250);
 }
 
 .no-link-style {
@@ -152,30 +123,35 @@ a {
 }
 
 .card-container {
-    margin: 30px 0;
+    /* perspective: 800px; */
+    margin: 10px;
     z-index: 0;
-    transition: none;
-    width: 70vw;
-    height: 100vw;
+    transition: transform .5s, z-index 0s .2s;
 }
 .card-container:hover {
-    transition: none;
+    transition: transform .5s, z-index 0s 0s;
     z-index: 3;  
 }
 
 .card-container:hover .card {
-    transform: none;
-    transition: none;
+    transform: rotateY(180deg) scale(1.15);
+    transition: transform .5s, margin .5s;
     /* margin: 30px; */
+}
+
+.card-container:hover .card-content {
+    height: 250px;
+    transition: height .5s;
 }
 
 .card {
     /* border: 8px dotted green; */
-    margin: 1px;
-    width: 100%;
-    height: 100%;
-    transition: transform .5s 10s;
+    margin: 10px;
+    width: 200px;
+    height: 100px;
+    transition: transform .5s, margin .5s;
     transform-style: preserve-3d;
+    transform: scale(1);
     display: flex;
         flex-direction: column;
         justify-content: center;
@@ -188,40 +164,25 @@ a {
     color: var(--light-black);
     background-color: var(--dark-white);
     border: 3px solid var(--light-black);;
-    border-radius: 30px;
+    border-radius: 20px;
     overflow: hidden;
-    padding: 20px;
-    width: 100%;
+    padding: 5px;
+    width: 200px;
     height: 100%;
+    transition: height .5s .5s;
     display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 }
 
-.card-content > h3 {
-    font-size: 2em;
-}
-
-.card-content > h4 {
-    font-size: 1.5em;
-}
-
-.card-content > p {
-    font-size: 1.25em;
-}
-
 .front, .back {
     backface-visibility: hidden;
     position: absolute;
 }
-
-.front {
-    display: none;
-}
  
 .back {
-    transform: none;
+    transform: rotateY(180deg);
     justify-content: space-around;
 }
 
@@ -233,14 +194,12 @@ a {
 
 .back > div > a {
     display: block;
-    font-size: 20px;
+    font-size: 14px;
     margin: 4px auto;
     border: 2px solid var(--light-black);
     border-radius: 5px;
-    text-decoration: none;
 }
 
 .back > div > a:hover {
     background-color: black;
-}
 }
