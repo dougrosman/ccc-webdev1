@@ -28,10 +28,12 @@ a {
 }
 
 #preheader {
-    position: absolute;
-    top: 10px;
-    left: 10px;
+    /* position: absolute; */
+    /* top: 10px;
+    left: 10px; */
     line-height: 1em;
+    width: 100%;
+    margin: 10px auto;
 }
 
 
@@ -42,8 +44,13 @@ a {
 }
 
 #wrapper {
-    width: 90vw;
-    margin: 20px auto;
+    width: 93vw;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     /* border: 3px solid white; */
 }
 
@@ -58,7 +65,7 @@ a {
 }
 
 #main-menu {
-    margin: 40px 0;
+    margin: 10px 0;
 }
 
 #return {
@@ -81,7 +88,7 @@ a {
 
 .container {
     width: 100%;
-    margin: 2vw auto;
+    margin: 1vw auto;
 }
 
 .flex-column {
