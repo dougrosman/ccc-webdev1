@@ -5,7 +5,7 @@
 
     :root {
         --light-black: rgb(25, 25, 25);
-        --dark-white: rgb(240, 240, 240);
+        --dark-white: rgb(235, 235, 235);
     }
 
     * {
@@ -59,7 +59,7 @@
     #return {
         padding: 4px;
         font-size: 10px;
-        border: 1px solid white;
+        border: 1px solid var(--dark-white);
         max-width: 50vw;
         width: max-content;
         border-radius: 3px;
@@ -131,9 +131,9 @@
         flex-grow: 1;
     }
 
-    .menu-item:last-child {
+    /* .menu-item:last-child {
         border-right: 2px solid white;
-    }
+    } */
 
     .menu-item:hover {
         transition: unset;
@@ -251,6 +251,10 @@
     .back > div > a:hover {
         background-color: black;
     }
+
+    .center {
+        text-align: center;
+    }    
 }
 
 
