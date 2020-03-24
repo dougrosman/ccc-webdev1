@@ -1,6 +1,7 @@
 :root {
     --light-black: rgb(25, 25, 25);
     --dark-white: rgb(235, 235, 235);
+    --canvas-orange: #D54B3A;
 }
 
 * {
@@ -23,9 +24,26 @@ header {
     text-align: center;
 }
 
+figure {
+    display: inline-block;
+    width: max-content;
+    padding: 5px;
+    border: 2px solid var(--light-black);
+}
+
+figure:hover {
+    
+    border-radius: 5px;
+    border: 2px solid var(--dark-white);
+}
+
+figcaption {
+    text-align: center;
+}
+
 p {
-    font-size: 1.05em;
-    margin: 20px 0;
+    font-size: 1.15em;
+    /* margin: 20px 0; */
     line-height: 1.45em;
 }
 
@@ -36,6 +54,25 @@ a {
 ol > li {
     margin-left: 10px;
     margin-bottom: 10px;
+}
+
+ul > li {
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+ul > ul > li {
+    margin-left: 20px;
+}
+
+img {
+    object-fit: cover;
+    object-position: left;
+    width: 200px;
+    height: 200px;
+}
+
+pre {
+    display: inline;
 }
 
 #preheader {
@@ -102,12 +139,12 @@ ol > li {
     text-decoration: none;
 }
 
-#left {
-    flex: 2 1 60%;
+#col-lg {
+    flex: 10 1 250px;
 }
 
-#right {
-    flex: 1 2 30%;
+#col-sm {
+    flex: 1 10 250px;
 }
 
 .assignment {
@@ -122,6 +159,19 @@ ol > li {
 
 .assignment > * {
     margin: 10px;
+}
+
+.assignment > h3 {
+    font-size: 1.5em;
+    text-decoration: underline;
+    font-weight: 800;
+}
+
+.assignment > h4 {
+    font-size: 1.5em;
+    text-decoration: underline;
+    font-weight: 800;
+    margin-top: 24px;
 }
 
 .container {
@@ -141,7 +191,7 @@ ol > li {
 .flex-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     /* align-items: center; */
     flex-wrap: wrap;
 }
@@ -176,6 +226,9 @@ ol > li {
 .blue:hover { background-color: rgb(0, 0, 200); }
 .purple:hover { background-color: rgb(130, 0, 160); }
 .magenta-h:hover { color: rgb(240, 0, 240); }
+.canvas-red-h:hover { background-color: #D54B3A; }
+.canvas-red {color: #D54B3A;}
+.white-h:hover { background-color: var(--dark-white); color: var(--light-black);}
 
 .black-h:hover {
     background-color: var(--light-black);
@@ -188,14 +241,21 @@ ol > li {
     border: 2px solid #D54B3A;
 }
 
-.canvas-h:hover {
-    background-color: #D54B3A;
-    
+.highlight {
+    color: #D54B3A;
+    padding: 0 1px;
 }
+
+.compact > li {
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.canvas-h:hover { background-color: #D54B3A; }
 
 .card-container {
     /* perspective: 800px; */
-    margin: 10px;
+    margin: 20px 20px;
     z-index: 0;
     transition: transform .5s, z-index 0s .2s;
 }
@@ -213,9 +273,9 @@ ol > li {
 .card {
     /* border: 8px dotted green; */
     margin: 1px;
-    width: 175px;
-    height: 275px;
-    transition: transform .5s 4s;
+    width: 150px;
+    height: 200px;
+    transition: transform 1s .5s;
     transform-style: preserve-3d;
     display: flex;
         flex-direction: column;
@@ -235,13 +295,17 @@ ol > li {
     border: 3px solid var(--light-black);;
     border-radius: 20px;
     overflow: hidden;
-    padding: 5px;
-    width: 100%;
+    padding: 12px;
+    width: 96%;
     height: 100%;
     display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
+}
+
+.card-content > h4 {
+    color: var(--canvas-orange);
 }
 
 .front, .back {
@@ -254,13 +318,18 @@ ol > li {
     justify-content: space-around;
 }
 
+.back p {
+    font-size: .95em;
+}
+
 .front > * {margin: 5px auto;}
+.front > h4 {font-size: 1.5em; color: var(--light-black);}
 
 .back > div {
     width: 80%;
 }
 
-.back > div > a {
+/* .back > div > a {
     display: block;
     font-size: 16px;
     margin: 4px auto;
@@ -271,7 +340,7 @@ ol > li {
 
 .back > div > a:hover {
     background-color: black;
-}
+} */
 
 .review {
     font-family: serif;
