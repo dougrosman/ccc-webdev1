@@ -32,7 +32,6 @@ figure {
 }
 
 figure:hover {
-    
     border-radius: 5px;
     border: 2px solid var(--dark-white);
 }
@@ -52,23 +51,23 @@ a {
 }
 
 ol > li {
-    margin-left: 10px;
+    margin-left: 15px;
     margin-bottom: 10px;
 }
 
 ul > li {
-    margin-left: 10px;
+    margin-left: 15px;
     margin-bottom: 15px;
 }
 ul > ul > li {
-    margin-left: 20px;
+    margin-left: 35px;
 }
 
-img {
+figure > a > img {
     object-fit: cover;
     object-position: left;
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
 }
 
 pre {
@@ -140,11 +139,18 @@ pre {
 }
 
 #col-lg {
-    flex: 10 1 250px;
+    flex: 3 1 56%;
+    min-width: 450px;
+}
+
+#col-md {
+    flex: 2 1 40%;
+    min-width: 300px;
 }
 
 #col-sm {
-    flex: 1 10 250px;
+    flex: 1 3 10%;
+    min-width: 200px;
 }
 
 .assignment {
@@ -154,7 +160,6 @@ pre {
     border-radius: 5px;
     padding: 6px;
     /* background-color: orange; */
-    height: max-content;
 }
 
 .assignment > * {
@@ -248,7 +253,7 @@ pre {
 
 .compact > li {
     margin-bottom: 5px;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .canvas-h:hover { background-color: #D54B3A; }
@@ -347,3 +352,22 @@ pre {
     color: var(--light-black);
     background-color: var(--dark-white);
 }
+
+.download {
+    display: flex;
+}
+
+/* div > .download {
+    max-width: 200px;
+}
+
+@media only screen  
+  and (max-width: 700px)   {
+    
+    div > .download {
+        /* display: inline-block; */
+        /* width: 40%; */
+        max-width: unset;
+    }
+
+  } */

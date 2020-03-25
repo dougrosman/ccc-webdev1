@@ -6,6 +6,7 @@
     :root {
         --light-black: rgb(25, 25, 25);
         --dark-white: rgb(235, 235, 235);
+        --canvas-orange: #D54B3A;
     }
 
     * {
@@ -30,6 +31,31 @@
 
     a {
         color: rgb(0, 200, 200);
+    }
+
+    figure {
+        display: block;
+        padding: 0px;
+        width: max-content;
+        margin: 8px auto;
+    }
+
+    figure > a {
+        display: inline-block;
+        width: max-content;
+        margin: 0 auto;
+    }
+
+    figure > a > img {
+        object-fit: cover;
+        object-position: left top;
+        width: 80vw;
+        height: 40vw;
+    }
+
+    figcaption {
+        width: max-content;
+        margin: 0 auto;
     }
 
     #wrapper {
@@ -86,6 +112,21 @@
         display: inline-block;
         font-weight: 300;
         width: max-content;
+    }
+
+    #col-lg {
+        flex: 1 1 100%;
+        min-width: 0;
+    }
+    
+    #col-md {
+        flex: 1 1 100%;
+        min-width: 0;
+    }
+    
+    #col-sm {
+        flex: 1 1 100%;
+        min-width: 0;
     }
 
     .container {
@@ -163,8 +204,8 @@
         transition: none;
         width: 70vw;
         height: 90vw;
-        max-height: 320px;
-        min-height: 250px;
+        max-height: 220px;
+        min-height: 150px;
     }
     .card-container:hover {
         transition: none;
@@ -265,6 +306,24 @@
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape)   {
 
+    ol > li {
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+    
+    ul > li {
+        margin-left: 20px;
+        margin-bottom: 15px;
+    }
+    ul > ul > li {
+        margin-left: 40px;
+    }
+
+    .compact > li {
+        margin-bottom: 5px;
+        margin-left: 20px;
+    }
+
     .card-container {
         margin: 0;
         width: 31vw;
@@ -274,5 +333,19 @@
 
     .flex-row {
         justify-content: space-between;
+    }
+
+    figure {
+        display: block;
+        padding: 0px;
+        width: max-content;
+        margin: 8px auto;
+    }
+
+    figure > a > img {
+        object-fit: cover;
+        object-position: left top;
+        width: 100vh;
+        height: 40vh;
     }
   }
