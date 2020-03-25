@@ -59,7 +59,7 @@
     }
 
     #wrapper {
-        width: 93vw;
+        width: 100vw;
         max-width: 1000px;
         min-width: 300px;
         margin: 10px auto;
@@ -103,8 +103,8 @@
 
     #preheader {
         line-height: 1em;
-        width: 100%;
-        margin: 10px auto;
+        width: 96%;
+        margin: 5px auto;
         line-height: 1em;
     }
 
@@ -131,20 +131,20 @@
 
     .container {
         width: 100%;
-        margin: 4vh auto;
+        margin: 3vh auto;
     }
 
-    .page-title {
-        position: sticky;
+    /* .page-title {
+        
         z-index: 4;
         top: 0px;
         padding-bottom: 4px;
-        /* border: 2px solid red; */
+        border: 2px solid red;
         background-color: var(--light-black);
-        /* background-color: green; */
+        background-color: green;
         width: 100vw;
         text-align: center;
-    }
+    } */
 
     .flex-column {
         display: flex;
@@ -295,7 +295,27 @@
 
     .center {
         text-align: center;
-    }    
+    }
+
+    .download {
+        display: flex;
+        flex-direction: column;
+    }
+    .download > a {
+        flex-basis: 100%;
+    }
+
+    .sticky {
+        position: sticky;
+        z-index: 4;
+        top: 0px;
+        padding-bottom: 4px;
+        /* border: 2px solid red; */
+        background-color: var(--light-black);
+        /* background-color: green; */
+        width: 100vw;
+        text-align: center;
+    }
 }
 
 
@@ -307,21 +327,21 @@
   and (orientation: landscape)   {
 
     ol > li {
-        margin-left: 20px;
+        margin-left: 30px;
         margin-bottom: 10px;
     }
     
     ul > li {
-        margin-left: 20px;
+        margin-left: 30px;
         margin-bottom: 15px;
     }
     ul > ul > li {
-        margin-left: 40px;
+        margin-left: 50px;
     }
 
     .compact > li {
         margin-bottom: 5px;
-        margin-left: 20px;
+        margin-left: 30px;
     }
 
     .card-container {
@@ -347,5 +367,15 @@
         object-position: left top;
         width: 100vh;
         height: 40vh;
+    }
+
+    .download {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .download > a {
+        flex-basis: 50%;
     }
   }
