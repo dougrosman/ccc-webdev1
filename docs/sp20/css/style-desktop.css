@@ -233,15 +233,21 @@ pre {
 }
 .red { color: rgb(180, 0, 0); }
 .red-h:hover { background-color: rgb(180, 0, 0); }
-.orange:hover { background-color: rgb(200, 120, 0); }
-.yellow:hover { background-color: rgb(220, 190, 30); }
+.orange { color: rgb(200, 120, 0); }
+.orange-h:hover { background-color: rgb(200, 120, 0); }
+.yellow { color: rgb(220, 190, 30); }
+.yellow-h:hover { background-color: rgb(220, 190, 30); }
 .green { color: rgb(0, 160, 0); }
 .green-h:hover { background-color: rgb(0, 160, 0); }
-.blue:hover { background-color: rgb(0, 0, 200); }
-.purple:hover { background-color: rgb(130, 0, 160); }
-.magenta-h:hover { color: rgb(240, 0, 240); }
+.blue { color: rgb(0, 0, 200); }
+.blue-h:hover { background-color: rgb(0, 0, 200); }
+.purple { color: rgb(130, 0, 160); }
+.purple-h:hover { background-color: rgb(130, 0, 160); }
+.magenta { color: rgb(240, 0, 240); }
+.magenta-h:hover { background-color: rgb(240, 0, 240); }
 .canvas-red-h:hover { background-color: #D54B3A;  }
 .canvas-red {color: #D54B3A;}
+.white { color: var(--dark-white); color: var(--light-black);}
 .white-h:hover { background-color: var(--dark-white); color: var(--light-black);}
 
 .black-h:hover {
