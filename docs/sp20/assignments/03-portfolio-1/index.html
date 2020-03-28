@@ -21,10 +21,10 @@
         <header class="container flex-column">
             <nav id="main-menu" class="flex-row">
                 <a class="menu-item white-h" href="../..">Home</a>
-                <a class="menu-item red" href="../about">About</a>
+                <a class="menu-item red-h" href="../about">About</a>
                 <a class="menu-item orange" href="..">Assignments</a>
                 <a class="menu-item yellow" href="../../resources">Resources</a>
-                <a class="menu-item green" href="../../lectures">Lecture Slides</a>
+                <a class="menu-item green-h" href="../../lectures">Lecture Slides</a>
                 <a class="menu-item blue" href="../../slack">Slack</a>
                 <a class="menu-item purple" href="../../codepen">Codepen</a>
                 <a class="menu-item canvas-red-h" href="https://canvas.colum.edu/" target="_blank">Canvas</a>
@@ -47,31 +47,49 @@
             </div>
             <div id="col-lg">                
                 <div class="assignment">
-                    <h3>Prompt</h3>
-                    <p>Create 3 HTML pages that look like the 3 screen shots I've uploaded here. The three files should be called:</p>
+                    <h3>Prompt:</h3>
+                    <p>Set up the basic folder structure for your website and get comfortable posting your changes to GitHub.</p>
+                    <p>Throughout this course, we will be building small web pages to practice our web development skills. These web pages might be assignment responses, or in-class exercises. Our personal web portfolios will function as individual class websites where we can track our progress and development. The personal WebDev portfolio will be developed incrementally throughout the semester.</p>
+
+                    <h4>Guidelines:</h4>
                     <ol>
-                        <li><span class="highlight">elements.html</span></li>
-                        <li><span class="highlight">basic-portfolio.html</span></li></li>
-                        <li><span class="highlight">nested-lists.html</span></li>
+                        <li class="guideline">Create a GitHub repository called something like “webdev-1”</li>
+                        <ol class="sublist">
+                            <li>Go to github.com and create an account using your .edu email</li>
+                            <li>Create a new Repository called webdev-1, give it a brief description, and check the box next to “Initialize this repository with a README”</li>
+                            <li>Click “Create Repository”</li>
+                            <li>From the repository page, click “Clone or Download” and copy the URL</li>
+                            <li>Open up the GitHub Desktop app (download that <a href="https://desktop.github.com/" target="_blank">here</a> if you don’t have it)</li>
+                            <li>Make sure you’re signed into your GitHub account (go into the app’s preferences to sign in)</li>
+                            <li>Click File → Clone Repository and go to the ‘URL’ tab</li>
+                            <li>Paste the link you copied from github.com in part d. above</li>
+                            <li>Choose your local path (this can be wherever you keep your school work) and press the blue ‘Clone’ button.</li>
+                        </ol>
+                        <li class="guideline">Open your repository inside VS Code and create your website folder structure</li>
+                        <ol class="sublist">
+                            <li>Open up VS Code (download that <a href="https://code.visualstudio.com/" target="_blank">here</a> if you don’t have it)</li>
+                            <li>Create a folder structure that matches the diagram below (don’t worry if you haven’t complete assignment 05 yet, that’s just there as an example)</li>
+                        </ol>
+                        <li class="guideline">Create basic HTML pages for your 3 index.html files. Each page should include:</li>
+                        <ol class="sublist">
+                            <li>Required HTML elements (&lt;!DOCTYPE html&gt;, &lt;head&gt;, &lt;body&gt; (remember: in VS Code, start typing ‘ht’ and then select html:5 from the dropdown menu to get the required elements)</li>
+                            <li>A title for each page in the &lt;title&gt; tag</li>
+                            <li>A &lt;h1&gt; tag for the site title (e.g. Doug’s Portfolio)</li>
+                            <li>A &lt;h2&gt; tag for the page title (e.g. About, Assignments, Home)</li>
+                        </ol>
+                        <li class="guideline">Here's what your basic folder structure should include:</li>
                     </ol>
-                    <div class="gallery">
-                        <figure>
-                            <a href="images/elements.jpg"><img src="images/elements.jpg" alt="elements.html"/></a>
-                            <figcaption>elements.html</figcaption>
-                        </figure>
-                        <figure>
-                            <a href="images/basic-portfolio.jpg"><img src="images/basic-portfolio.jpg" alt="basic-portfolio.html"></a>
-                            <figcaption>basic-portfolio.html</figcaption>
-                        </figure>
-                        <figure>
-                            <a href="images/nested-lists.jpg"><img src="images/nested-lists.jpg" alt="nested-lists.html"/></a>
-                            <figcaption>nested-lists.html</figcaption>
-                        </figure>
-                    </div>
+                    <figure class="center">
+                        <a href="images/folder-structure.png"><img class="img-lrg" src="images/folder-structure.png" alt="Basic folder structure"/></a>
+                        <figcaption>Basic folder structure</figcaption>
+                    </figure>
 
                     <h4>How to submit:</h4>
-                    <p>Upload the three files to Assignment 02 on Canvas.</p>
-
+                    <p>Commit and Push your changes to GitHub using the GitHub Desktop app and paste the link to your <u>home page</u> in Assignment 03 in Canvas. Make sure the link you post is the link to the website, <strong>NOT</strong> the link to your Live Server version hosted locally:</p>
+                    <ul class="sublist">
+                        <li><span class="red">http://127.0.0.1:5500/docs/</span> (this is your localhost link. It’s not accessible online, so <strong><u>don't</u></strong> share this to Canvas)</li>
+                        <li><span class="green">https://username.github.io/your-repo/</span>(your home page link should look something like this! Share this one to the Canvas assignment.)</li>
+                    </ul>
                     <h4>How to receive full credit:</h4>
                     <ul class="compact">
                         <li>I should be able to download and look at each of your uploaded files.</li>
@@ -82,14 +100,25 @@
                        
                     <h4>Notes for getting started:</h4>
                     <ul>
-                        <li>Write clean code! Make sure you indent and nest your tags correctly, so that it's easy to tell what tags are inside of other tags, and whether or not you still need to close a tag</li>
-                        <li>You can use whatever colors, links, or images you'd like, <strong class="highlight">but the spacing and structure of each page should mirror the example screenshots</strong></li>
-                        <li>For your CSS styling, use <i class="highlight">in-document styling</i>  (write your CSS in between two <pre>&lt;style&gt;</pre> tags in the <pre>&lt;head&gt;</pre>) section of your .html file. (although typically, we write our CSS in <i class="highlight">separate documents</i>).</li>
-                        <li>If you get stuck, try to think about your problem in human language, and Google it!</li>
-                        <ul>
-                            <li>For example: if you don't know how to make a list with bullet points, you don't have to know exactly what that's called in HTML; you can just Google '<span class="highlight">How to make a bullet point list in HTML</span>.'</li>
-                        </ul>
+                        <li>The link you submit should take me to your <strong><u>home page</u></strong>. MAKE SURE TO TEST YOUR LINK BEFORE SUBMITTING.</li>
+                        <li>Your home page should display the title of your web page</li>
+                        <li>You should have created all the folders and files in the diagram above in the right place</li>
+                        <li>Your Home, About, and Assignments pages should look like this (remember, each of those files should be called <i>index.html</i> and placed inside the correct folder):</li>
                     </ul>
+                    <div class="gallery">
+                        <figure>
+                            <a href="images/home.png"><img class="img-med" src="images/home.png" alt="Home page"/></a>
+                            <figcaption>Home page</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="images/about.png"><img class="img-med" src="images/about.png" alt="About page"/></a>
+                            <figcaption>About page</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="images/assignments.png"><img class="img-med" src="images/assignments.png" alt="Assignments page"/></a>
+                            <figcaption>Assignments page</figcaption>
+                        </figure>
+                    </div>
                 </div>
             </div>
         </section>
@@ -97,6 +126,6 @@
 </body>
 </html>
 
-<!--https://app.slack.com/client/TTSTR963F/CTV4ZDYGN
+<!--https://app.slack.com/client/TTSTR963F/CTE3YEVGS
 
 https://codepen.io/dougrosman-->

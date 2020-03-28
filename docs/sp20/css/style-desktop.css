@@ -1,6 +1,8 @@
 :root {
-    --light-black: rgb(25, 25, 25);
-    --dark-white: rgb(235, 235, 235);
+    /* --light-black: rgb(30, 30, 30); */
+    --light-black: rgb(250, 250, 250);
+    /* --dark-white: rgb(230, 230, 230); */
+    --dark-white: rgb(40, 40, 40);
     --canvas-orange: #D54B3A;
 }
 
@@ -20,6 +22,10 @@ h1, h2, h3 {
     font-weight: 300;
 }
 
+h2 {
+    font-size: 2em;
+}
+
 header {
     text-align: center;
 }
@@ -27,6 +33,7 @@ header {
 figure {
     display: inline-block;
     width: max-content;
+    max-width: 90%;
     padding: 5px;
     border: 2px solid var(--light-black);
 }
@@ -47,7 +54,7 @@ p {
 }
 
 a {
-    color: rgb(0, 200, 200);
+    color: rgb(0, 170, 170);
 }
 
 ol > li {
@@ -119,7 +126,7 @@ pre {
 #return {
     padding: 4px;
     font-size: 10px;
-    border: 1px solid white;
+    border: 1px solid var(--light-black);
     width: unset;
     max-width: 10vw;
     border-radius: 3px;
@@ -155,7 +162,7 @@ pre {
 
 .assignment {
     display: block;
-    border: 2px solid white;
+    border: 2px solid var(--dark-white);
     margin: 5px;
     border-radius: 5px;
     padding: 6px;
@@ -203,35 +210,37 @@ pre {
 
 .menu-item {
     display: inline-block;
-    border: 2px solid white;
+    border: 2px solid var(--dark-white);
     padding: 10px 20px;
     margin: 4px;
     text-decoration: none;
-    color: white;
+    color: var(--dark-white);
     font-size: 1em;
 }
 
 .menu-item:last-child {
-    border-right: 2px solid white;
+    border-right: 2px solid var(--dark-white);
 }
 
 .menu-item:hover {
-    background-color: rgb(250, 250, 250);
+    background-color: var(--dark-white);
+    color: var(--light-black);
 }
 
 .no-link-style {
     text-decoration: none;
     color: unset;
 }
-
-.red:hover { background-color: rgb(180, 0, 0); }
+.red { color: rgb(180, 0, 0); }
+.red-h:hover { background-color: rgb(180, 0, 0); }
 .orange:hover { background-color: rgb(200, 120, 0); }
-.yellow:hover { background-color: rgb(205, 205, 0); }
-.green:hover { background-color: rgb(0, 160, 0); }
+.yellow:hover { background-color: rgb(220, 190, 30); }
+.green { color: rgb(0, 160, 0); }
+.green-h:hover { background-color: rgb(0, 160, 0); }
 .blue:hover { background-color: rgb(0, 0, 200); }
 .purple:hover { background-color: rgb(130, 0, 160); }
 .magenta-h:hover { color: rgb(240, 0, 240); }
-.canvas-red-h:hover { background-color: #D54B3A; }
+.canvas-red-h:hover { background-color: #D54B3A;  }
 .canvas-red {color: #D54B3A;}
 .white-h:hover { background-color: var(--dark-white); color: var(--light-black);}
 
@@ -245,6 +254,7 @@ pre {
     text-align: center;
     border: 2px solid #D54B3A;
 }
+.canvas-h:hover { background-color: #D54B3A; color: var(--light-black); }
 
 .highlight {
     color: #D54B3A;
@@ -256,7 +266,7 @@ pre {
     margin-left: 15px;
 }
 
-.canvas-h:hover { background-color: #D54B3A; }
+
 
 .card-container {
     /* perspective: 800px; */
@@ -362,6 +372,37 @@ pre {
     flex-basis: 100%;
 }
 
+.guideline {
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.sublist > li {
+    margin-left: 30px;
+    list-style-type: lower-latin
+}
+
+.img-lrg {
+    width: 100%;
+    height: unset;
+}
+
+.img-med {
+    width: 275px;
+    height: unset;
+}
+
+.center {
+    display: block;
+    margin: 0 auto;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 @media only screen  
   and (max-width: 700px)   {
     .download {
@@ -373,5 +414,4 @@ pre {
     .download > a {
         flex-basis: 50%;
     }
-
   }
