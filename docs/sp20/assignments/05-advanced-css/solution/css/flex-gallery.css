@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: monospace;
+}
+
+h1, h3 {
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 70vw;
+}
+
+#gallery {
+    margin: 0 auto;
+    display: flex;
+    padding: 10px;
+    outline: 3px dotted black;
+    outline-offset: -3px;
+    width: 95%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 150px;
+    border: 4px dashed magenta;
+    margin: 10px; 
+}
+
+.orange {
+    color: darkorange;
+    background-color: black;
+    padding: 1px 3px;
+}
+
+

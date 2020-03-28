@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: monospace;
+}
+
+h1 {
+    padding: 20px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 98%;
+    max-width: 1000px;
+    height: 98vh;
+}
+
+#outer-bar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    width: 80%;
+    border: 2px solid black;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    animation: outer-loading 10s linear;
+    font-size: 1.5em;
+}
+
+#inner-bar {
+    position: absolute;
+    animation-name: inner-loading;
+    animation-duration: 10s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    width: 0px;
+    height: 100%;
+}
+
+@keyframes inner-loading {
+    0% {transform: rotateZ(0deg); top: 0; width: 0%; background-color: red}
+    60% {transform: rotateZ(0deg); top: 0; width: 99.5%; background-color: green}
+    90% {transform: rotateZ(0deg); top: 0; width: 99.5%; background-color: green}
+    100% {transform: rotateZ(180deg); top: 150vh; width: 99.5%; background-color: blue}
+}
+
+@keyframes outer-loading {
+    0% {color: rgba(0, 0, 0, 0)}
+    60% {color: rgba(0, 0, 0, 0)}
+    100% {color: rgba(0, 0, 0, 1)}
+}
+

@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: monospace;    
+}
+
+h1 {
+    padding: 30px;
+    text-align: center;
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 70vw;
+    height: 100vh;
+}
+
+#phone-body {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    border: 3px solid salmon;
+    border-radius: 1.5vw;
+    padding: 1vw;
+}
+
+.phone-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: .5vw 0;
+    padding: .75vw .5vw;
+    border: 2px solid teal;
+    border-radius: 1vw;
+}
+
+.phone-icon {
+    width: 4vw;
+    height: 4vw;
+    margin: 0 .5vw;
+    padding: 0px;
+    background-color: aqua;
+    border: 2px solid blue;
+    border-radius: .5vw;
+    transition: background-color 1s, transform 1s, padding 1s, margin 1s;
+}
+
+.phone-icon:hover {
+    background-color: magenta;
+    transform: scale(1.25) rotate(135deg);
+    padding: 0; 
+    margin: 1.25vw;
+}

@@ -1,0 +1,80 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: monospace;
+    
+}
+
+h1 {
+    padding: 20px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 98%;
+    max-width: 1000px;
+    height: 98vh;
+}
+
+#cat {
+    position: absolute;
+    transform: scale(1);
+    animation: cat 8s infinite linear;
+}
+
+.bird {
+    position: absolute;
+}
+
+.one {
+    animation: bird1 10s infinite linear;
+}
+
+.two {
+    animation: bird2 10s infinite linear;
+}
+
+.three {
+    animation: bird3 10s infinite linear;
+}
+
+
+@keyframes cat {
+    0% {transform: rotateZ(0deg) scale(1); top: 0px; left: 0px;}
+    25% {transform: rotateZ(360deg) scale(1.5); top: 400px; left: 200px;}
+    50% {transform: rotateZ(3080deg) scale(.5); top: 300px; left: 600px;}
+    75% {transform: rotateZ(360deg) scale(.5); top: 100px; left: 1200px;}
+    100% {transform: rotateZ(0deg) scale(1); top: 0px; left: 0px;}
+}
+
+
+@keyframes bird1 {
+    0% {transform: rotateZ(0deg) scale(1); top: 0px; left: 0px;}
+    25% {transform: rotateZ(360deg) scale(1.5); top: 400px; left: 200px;}
+    50% {transform: rotateZ(300deg) scale(.5); top: 300px; left: 600px;}
+    75% {transform: rotateZ(360deg) scale(.5); top: 100px; left: 1200px;}
+    100% {transform: rotateZ(0deg) scale(1); top: 0px; left: 0px;}
+}
+
+@keyframes bird2 {
+    0% {transform: rotateZ(0deg) scale(1); top: 0px; left: 0px;}
+    10% {transform: rotateZ(360deg) scale(1.5); top: 400px; left: 200px;}
+    50% {transform: rotateZ(34deg) scale(.5); top: 300px; left: 600px;}
+    80% {transform: rotateZ(100deg) scale(.5); top: 100px; left: 1200px;}
+    100% {transform: rotateZ(0deg) scale(1); top: 0px; left: 0px;}
+}
+
+@keyframes bird3 {
+    0% {transform: rotateZ(0deg) scale(1); top: 0px; left: 0px;}
+    40% {transform: rotateZ(360deg) scale(1.5); top: 400px; left: 200px;}
+    60% {transform: rotateZ(300deg) scale(.5); top: 300px; left: 600px;}
+    95% {transform: rotateZ(360deg) scale(.5); top: 100px; left: 1200px;}
+    100% {transform: rotateZ(0deg) scale(1); top: 0px; left: 0px;}
+}
