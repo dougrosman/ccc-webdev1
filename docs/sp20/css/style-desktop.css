@@ -4,6 +4,7 @@
     /* --dark-white: rgb(230, 230, 230); */
     --dark-white: rgb(40, 40, 40);
     --canvas-orange: #D54B3A;
+    --link-teal: rgb(0, 160, 160);
 }
 
 * {
@@ -54,11 +55,11 @@ p {
 }
 
 a {
-    color: rgb(0, 170, 170);
+    color: var(--link-teal);
 }
 
 ol > li {
-    margin-left: 15px;
+    margin-left: 18px;
     margin-bottom: 10px;
 }
 
@@ -129,7 +130,7 @@ pre {
     border: 1px solid var(--light-black);
     width: unset;
     max-width: 10vw;
-    border-radius: 3px;
+    border-radius: 5px;
     transition: font-size .25s;
     position: absolute;
     top: 0;
@@ -137,7 +138,7 @@ pre {
 }
 
 #return:hover {
-    color: black;
+    color: var(--light-black);
     font-size: 16px;
 }
 
@@ -166,6 +167,7 @@ pre {
     margin: 5px;
     border-radius: 5px;
     padding: 6px;
+    height: max-content;
     /* background-color: orange; */
 }
 
@@ -231,6 +233,7 @@ pre {
     text-decoration: none;
     color: unset;
 }
+
 .red { color: rgb(180, 0, 0); }
 .red-h:hover { background-color: rgb(180, 0, 0); }
 .orange { color: rgb(200, 120, 0); }
@@ -250,12 +253,6 @@ pre {
 .white { color: var(--dark-white); color: var(--light-black);}
 .white-h:hover { background-color: var(--dark-white); color: var(--light-black);}
 
-.black-h:hover {
-    background-color: var(--light-black);
-    color: var(--dark-white);
-    border: 2px solid var(--dark-white);
-}
-
 .canvas-h {
     text-align: center;
     border: 2px solid #D54B3A;
@@ -272,10 +269,10 @@ pre {
     margin-left: 15px;
 }
 
-
-
 .card-container {
     /* perspective: 800px; */
+    width: 150px;
+    height: 200px;
     margin: 20px 20px;
     z-index: 0;
     transition: transform .5s, z-index 0s .2s;
@@ -289,6 +286,14 @@ pre {
     transform: rotateY(180deg);
     transition: transform .5s;
     /* margin: 30px; */
+}
+
+.card-container:hover .black-h {
+    transform: rotateY(180deg);
+    transition: transform .5s;
+    background-color: var(--light-black);
+    color: var(--dark-white);
+    border: 2px solid var(--dark-white);
 }
 
 .card {
@@ -365,8 +370,8 @@ pre {
 
 .review {
     font-family: serif;
-    color: var(--light-black);
-    background-color: var(--dark-white);
+    color: var(--dark-white);
+    background-color: var(--light-black);
 }
 
 .download {
