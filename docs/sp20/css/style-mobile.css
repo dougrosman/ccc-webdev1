@@ -339,7 +339,6 @@
     }
 
     .sticky {
-        backdrop-filter: blur(0.5);
         position: sticky;
         z-index: 4;
         top: 0px;

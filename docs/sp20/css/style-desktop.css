@@ -414,6 +414,16 @@ pre {
     justify-content: space-around;
 }
 
+.sticky {
+    position: unset;
+    z-index: unset;
+    top: unset;
+    padding: unset;
+    background-color: unset;
+    width: unset;
+    text-align: center;
+}
+
 @media only screen  
   and (max-width: 700px)   {
     .download {
@@ -424,5 +434,9 @@ pre {
     
     .download > a {
         flex-basis: 50%;
+    }
+
+    .download > .one {
+        flex-basis: 100%;
     }
   }
