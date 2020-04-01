@@ -264,9 +264,12 @@ pre {
     padding: 0 1px;
 }
 
-.compact > li {
+.compact > li, .compact > ul > li {
     margin-bottom: 5px;
     margin-left: 15px;
+}
+.compact > ul > li {
+    margin-left: 30px;
 }
 
 .card-container {
@@ -391,6 +394,12 @@ pre {
 .sublist > li {
     margin-left: 30px;
     list-style-type: lower-latin
+}
+
+.sublist > .sublist > li {
+    margin-left: 45px;
+    margin-top: -10px;
+    list-style-type: lower-roman;
 }
 
 .img-lrg {

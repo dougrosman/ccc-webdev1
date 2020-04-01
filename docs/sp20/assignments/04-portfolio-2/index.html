@@ -10,8 +10,6 @@
     <title>04: Portfolio II</title>
 </head>
 <body>
-    
-    <!-- <a id="return" class="menu-item" href="../..">Back</a> -->
     <div id="wrapper">
         <div id="preheader">
             <a class="no-link-style" href=".."><h4>Web Development I</h4></a><br>
@@ -41,55 +39,90 @@
                     </ol>
                 </div>
                 <div class="download">
-                    <a href="solution/02-html-basics.zip" class="assignment canvas-h no-link-style">Download Solution</a>
-                    <a href="solution/02-html-basics.zip" class="assignment canvas-h no-link-style">Download Prompt PDF</a>
+                    <a href="solution/04-portfolio-2.zip" class="assignment canvas-h no-link-style">Download Solution</a>
+                    <a href="04-portfolio-2.pdf" class="assignment canvas-h no-link-style">View Prompt PDF</a>
                 </div>
             </div>
             <div id="col-lg">                
                 <div class="assignment">
-                    <h3>Prompt</h3>
-                    <p>Create 3 HTML pages that look like the 3 screen shots I've uploaded here. The three files should be called:</p>
+                    <h3>Prompt:</h3>
+                    <p><b>Points: 10</b></p>
+                    <p>We have our basic folder structure for our Web Development portfolio site, but it's not really linked, and it doesn't have any styling yet. The goal of this assignment isn't necessarily to make your website beautiful, it's just about making sure it has some basic styling, and that everything is linked together properly.</p>
+
+                    <h4>Summary:</h4>
+                    <p>Building on the portfolio setup you did for assignment 03, make your website look and function like an actual website.</p>
+
+                    <h4>Guidelines:</h4>
                     <ol>
-                        <li><span class="highlight">elements.html</span></li>
-                        <li><span class="highlight">basic-portfolio.html</span></li></li>
-                        <li><span class="highlight">nested-lists.html</span></li>
+                        <li class="guideline">Create a basic navigation menu on each of your “top-level” pages (your “top level” pages are your assignments page and about page)</li>
+                        <ol class="sublist">
+                            <li>Each link in the menu should link to the correct page</li>
+                            <li>Make sure each page has the same menu with working links (<em>Note: you can copy and paste your menu to each page, but you might have to change the filepaths for the links when you do that so that your menu works on each page.</em>)</li>
+                        </ol>
+                        <li class="guideline">Add a &lt;p&gt; tag to each page</li>
+                        <ol class="sublist">
+                            <li>Write some content in the &lt;p&gt; tag explaining what that page is about</li>
+                            <li>Create a folder structure that matches the diagram below (don’t worry if you haven’t complete assignment 05 yet, that’s just there as an example)</li>
+                        </ol>
+                        <li class="guideline">Create some basic CSS styling for your website by editing the style.css file in the css folder inside your docs folder.</li>
+                        <ol class="sublist">
+                            <li>Link the style.css file to each index.html file to see your css styling on all your pages</li>
+                            <li>Make your website only take up 70% of the “viewport” (the viewport is the screen space; the stuff currently displayed in your browser window)</li>
+                            <ol class="sublist">
+                                <li><span class="highlight">Style your &lt;body&gt; section in CSS with width: 70vw;</span></li>
+                            </ol>
+                            <li>Center your &lt;body&gt; section so your web content is in the middle of your page (the text itself doesn’t have to be center-aligned)</li>
+                            <ol class="sublist">
+                                <li><span class="highlight">Center your &lt;body&gt; section in CSS with margin: 0 auto;</span></li>
+                            </ol>
+                            <li>Change the font on your website from the default (Times New Roman)</li>
+                            <li>Give your &lt;body&gt; section a background color</li>
+                        </ol>
+                        <li class="guideline">On your Assignments page, link to each assignment you’ve completed so far.</li>
+                        <ol class="sublist">
+                            <li>You can link to the actual web pages you’ve created in your Repository OR</li>
+                            <li>You can link to assignments you’ve completed in Codepen</li>
+                        </ol>
                     </ol>
-                    <div class="gallery">
-                        <figure>
-                            <a href="images/elements.jpg"><img src="images/elements.jpg" alt="elements.html"/></a>
-                            <figcaption>elements.html</figcaption>
-                        </figure>
-                        <figure>
-                            <a href="images/basic-portfolio.jpg"><img src="images/basic-portfolio.jpg" alt="basic-portfolio.html"></a>
-                            <figcaption>basic-portfolio.html</figcaption>
-                        </figure>
-                        <figure>
-                            <a href="images/nested-lists.jpg"><img src="images/nested-lists.jpg" alt="nested-lists.html"/></a>
-                            <figcaption>nested-lists.html</figcaption>
-                        </figure>
-                    </div>
 
                     <h4>How to submit:</h4>
-                    <p>Upload the three files to Assignment 02 on Canvas.</p>
-
+                    <p>Commit and Push your changes to GitHub using the GitHub Desktop app and paste the link to your <u>home page</u> in Assignment 04 in Canvas. Make sure the link you post is the link to the website, <strong>NOT</strong> the link to your Live Server version hosted locally:</p>
+                    <ul class="sublist">
+                        <li><span class="red">http://127.0.0.1:5500/docs/</span> (this is your localhost link. It’s not accessible online, so <strong><u>don't</u></strong> share this to Canvas)</li>
+                        <li><span class="green">https://username.github.io/your-repo/</span> (your home page link should look something like this! Share this one to the Canvas assignment.)</li>
+                    </ul>
                     <h4>How to receive full credit:</h4>
                     <ul class="compact">
-                        <li>I should be able to download and look at each of your uploaded files.</li>
-                        <li>Visually, your pages should like the screenshots.</li>
-                        <li>For the <span class="highlight">elements.html</span> file, your page should use the appropriate elements (h1, h2, h3, p, ul, etc.) as stated in the screenshot</li>
-                        <li>If you use images, make sure to use images that you find online that you link to. <i class="highlight">I won't be able to see images you have on your own computer</i>.</li>
-                    </ul>
-                       
-                    <h4>Notes for getting started:</h4>
-                    <ul>
-                        <li>Write clean code! Make sure you indent and nest your tags correctly, so that it's easy to tell what tags are inside of other tags, and whether or not you still need to close a tag</li>
-                        <li>You can use whatever colors, links, or images you'd like, <strong class="highlight">but the spacing and structure of each page should mirror the example screenshots</strong></li>
-                        <li>For your CSS styling, use <i class="highlight">in-document styling</i>  (write your CSS in between two <pre>&lt;style&gt;</pre> tags in the <pre>&lt;head&gt;</pre>) section of your .html file. (although typically, we write our CSS in <i class="highlight">separate documents</i>).</li>
-                        <li>If you get stuck, try to think about your problem in human language, and Google it!</li>
+                        <li>The link you submit should take me to your home page. MAKE SURE TO TEST YOUR LINK BEFORE SUBMITTING.</li>
+                        <li>Each link I click on in each page’s menu should link to the correct page.</li>
+                        <li>Your CSS styling should match the screenshots below</li>
                         <ul>
-                            <li>For example: if you don't know how to make a list with bullet points, you don't have to know exactly what that's called in HTML; you can just Google '<span class="highlight">How to make a bullet point list in HTML</span>.'</li>
+                            <li>Width of each &lt;body&gt; should be 70vw</li>
+                            <li>Content of the body should be in the center of the page</li>
+                            <li>Font should <strong>not</strong> be the default Times New Roman</li>
+                            <li>There should be a background color</li>
+                            <li>Feel free to use whatever colors or fonts you'd like!</li>
                         </ul>
                     </ul>
+                    <div class="gallery center">
+                        <figure>
+                            <a href="images/home2.png"><img class="img-med" src="images/home2.png" alt="Home page"/></a>
+                            <figcaption>Home page</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="images/about2.png"><img class="img-med" src="images/about2.png" alt="About page"/></a>
+                            <figcaption>About page</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="images/assignments2.png"><img class="img-med" src="images/assignments2.png" alt="Assignments page"/></a>
+                            <figcaption>Assignments page</figcaption>
+                        </figure>
+                    </div>
+                    <h4>Tips for getting started:</h4>
+                    <ul>
+                        <li>For help linking your files in your menu, check out the file-linking video in the catch-up guide</li>
+                        <li>Remember, you only need to create your CSS on one page: style.css. You can link that css stylesheet to any html file you want to apply your style to.</li>
+                    </ul>                  
                 </div>
             </div>
         </section>
@@ -97,6 +130,6 @@
 </body>
 </html>
 
-<!--https://app.slack.com/client/TTSTR963F/CTV4ZDYGN
+<!--https://app.slack.com/client/TTSTR963F/CTE3YEVGS
 
 https://codepen.io/dougrosman-->
