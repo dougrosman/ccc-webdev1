@@ -7,11 +7,9 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../css/style-desktop.css">
     <link rel="stylesheet" href="../../css/style-mobile.css">
-    <title>03: Portfolio I</title>
+    <title>05: Advanced CSS</title>
 </head>
 <body>
-    
-    <!-- <a id="return" class="menu-item" href="../..">Back</a> -->
     <div id="wrapper">
         <div id="preheader">
             <a class="no-link-style" href=".."><h4>Web Development I</h4></a><br>
@@ -21,82 +19,127 @@
         <header class="container flex-column">
             <nav id="main-menu" class="flex-row">
                 <a class="menu-item white-h" href="../..">Home</a>
-                <a class="menu-item red" href="../about">About</a>
-                <a class="menu-item orange" href="..">Assignments</a>
-                <a class="menu-item yellow" href="../../resources">Resources</a>
-                <a class="menu-item green" href="../../lectures">Lecture Slides</a>
-                <a class="menu-item blue" href="../../slack">Slack</a>
-                <a class="menu-item purple" href="../../codepen">Codepen</a>
+                <a class="menu-item red-h" href="../about">About</a>
+                <a class="menu-item orange-h" href="..">Assignments</a>
+                <a class="menu-item yellow-h" href="../../resources">Resources</a>
+                <a class="menu-item green-h" href="../../lectures">Lecture Slides</a>
+                <a class="menu-item blue-h" href="../../slack">Slack</a>
+                <a class="menu-item purple-h" href="../../codepen">Codepen</a>
                 <a class="menu-item canvas-red-h" href="https://canvas.colum.edu/" target="_blank">Canvas</a>
             </nav>
         </header>
-        <h2 class="center sticky"><a href="." class="no-link-style">03: Portfolio I</a></h2>
+        <h2 class="center sticky"><a href="." class="no-link-style">05: Advanced CSS</a></h2>
         <section class="container flex-row">
             
             <div id="col-sm">
                 <div class="assignment">
                     <h3>Solution</h3>
-                    <p>1. <a href="solution/basic-portfolio.html">basic-portfolio.html</a></p>
-                    <p>2. <a href="solution/elements.html">elements.html</a></p>
-                    <p>3. <a href="solution/nested-lists.html">nested-lists.html</a></p>
+                    <ol>
+                        <li><a href="solution/gallery.html">gallery.html</a></li>
+                        <li><a href="solution/flex-gallery.html">flex-gallery.html</a></li>
+                        <li><a href="solution/flex-menu.html">flex-menu.html</a></li>
+                        <li><a href="solution/smartphone.html">smartphone.html</a></li>
+                        <li><a href="solution/loading-bar.html">loading-bar.html</a></li>
+                        <li><a href="solution/petting-zoo.html">petting-zoo.html</a></li>
+                    </ol>
                 </div>
                 <div class="download">
-                    <a href="solution/02-html-basics.zip" class="assignment canvas-h no-link-style">Download Solution</a>
-                    <a href="solution/02-html-basics.zip" class="assignment canvas-h no-link-style">Download Prompt PDF</a>
+                    <a href="solution/05-advanced-css.zip" class="assignment canvas-h no-link-style">Download Solution</a>
+                    <a href="04-Portfolio_II.pdf" class="assignment canvas-h no-link-style">View Prompt PDF</a>
                 </div>
             </div>
             <div id="col-lg">                
                 <div class="assignment">
-                    <h3>Prompt</h3>
-                    <p>Create 3 HTML pages that look like the 3 screen shots I've uploaded here. The three files should be called:</p>
+                    <h3>Prompt:</h3>
+                    <p><b>Points: 15</b></p>
+                    <p>We have our basic folder structure for our Web Development portfolio site, but it's not really linked, and it doesn't have any styling yet. The goal of this assignment isn't necessarily to make your website beautiful, it's just about making sure it has some basic styling, and that everything is linked together properly.</p>
+
+                    <h4>Summary:</h4>
+                    <p>Recreate six web pages using different advanced CSS properties including flexbox, transitions and animations.</p>
+
+                    <h4>Guidelines:</h4>
                     <ol>
-                        <li><span class="highlight">elements.html</span></li>
-                        <li><span class="highlight">basic-portfolio.html</span></li></li>
-                        <li><span class="highlight">nested-lists.html</span></li>
-                    </ol>
-                    <div class="gallery">
+                        <li class="guideline">Create a <span class="purple folder">folder</span> called <span class="purple folder">05-advanced-css</span> in your assignments <span class="purple folder">folder</span> in your portfolio website</li>
+                        <li class="guideline">Inside that <span class="purple folder">folder</span>, create the following <span class="purple folder">folders</span>, <span class="orange">html files</span> and <span class="blue">css files</span>:</li class="guideline"></li>
+                        <ol class="sublist">
+                            <li><span class="orange">gallery.html</span> (create an image gallery using &lt;img&gt; tags)</li>
+                            <li><span class="orange">flex-gallery.html</span> (create a gallery using &lt;img&gt; tags) inside a div container with flexbox</li>
+                            <li><span class="orange">flex-menu.html</span> (create a responsive &lt;nav&gt; menu using flexbox)</li>
+                            <li><span class="orange">smartphone.html</span> (create a responsive “phone” with rows of apps using flexbox)</li>
+                            <li><span class="orange">loading-bar.html</span> (create your interpretation of a loading bar using css animations)</li>
+                            <li><span class="orange">petting-zoo.html</span> (create multiple objects with looping animations)</li>
+                            <li><span class="purple folder">css</span></li>
+                            <ol class="sublist">
+                                <li><span class="blue">gallery.css</span></li>
+                                <li><span class="blue">flex-gallery.css</span></li>
+                                <li><span class="blue">flex-menu.css</span></li>
+                                <li><span class="blue">smartphone.css</span></li>
+                                <li><span class="blue">loading-bar.css</span></li>
+                                <li><span class="blue">petting-zoo.css</span></li>
+                            </ol>
+                            <li><span class="purple folder">images</span><span class="purple"> (put images in this folder you plan to use in any of your web pages. You can drag and drop images directly into this folder in VS Code)</span></li>
+                        </ol>
+                        <li class="guideline">Do your best to recreate the screen captures below. Feel free to use whatever images, colors or styles you’d like. Your web pages don’t have to function exactly like the animated examples. (click each image to be brought to a page to see them animating)</li>
+                        <li class="guideline">Make sure to link to all these pages on your assignments page so that I can look at them.</li>
+                    </ol><br>
+                    <p class="highlight"><strong>Click on an image to load a video of it moving. Your page doesn’t have to replicate. exactly what is shown in the videos</strong></p>
+                    <div class="gallery center">
                         <figure>
-                            <a href="images/elements.jpg"><img src="images/elements.jpg" alt="elements.html"/></a>
-                            <figcaption>elements.html</figcaption>
+                            <a href="videos/01-gallery.mp4"><img class="img-med" src="images/01-gallery.png" alt="gallery screenshot"></a>
+                            <figcaption><b>gallery.html</b><div class="subcaption">Images should wrap as the page is resized. <b>Hint:</b> put &lt;img&gt; tags inside of a single &lt;div&gt;</div></figcaption>
                         </figure>
                         <figure>
-                            <a href="images/basic-portfolio.jpg"><img src="images/basic-portfolio.jpg" alt="basic-portfolio.html"></a>
-                            <figcaption>basic-portfolio.html</figcaption>
+                            <a href="videos/02-flex-gallery.mp4"><img class="img-med" src="images/02-flex-gallery.png" alt="gallery screenshot"></a>
+                            <figcaption><b>flex-gallery.html</b><div class="subcaption">Images should wrap and be spaced evenly in a &lt;div&gt;. <b>Hint:</b>The &lt;div&gt; that holds the &lt;img&gt; tags should be flexed, and flex-wrap set to nowrap.</div></figcaption>
                         </figure>
                         <figure>
-                            <a href="images/nested-lists.jpg"><img src="images/nested-lists.jpg" alt="nested-lists.html"/></a>
-                            <figcaption>nested-lists.html</figcaption>
+                            <a href="videos/03-flex-menu.mp4"><img class="img-med" src="images/03-flex-menu.png" alt="gallery screenshot"></a>
+                            <figcaption><b>flex-menu.html</b><div class="subcaption">Menu items should wrap as the screen is resized. <b>Hint:</b> use a &lt;nav&gt; section to contain your links (which should be &lt;a&gt; tags</div></figcaption>
+                        </figure>
+                        <figure>
+                            <a href="videos/04-smartphone.mp4"><img class="img-med" src="images/04-smartphone.png" alt="gallery screenshot"></a>
+                            <figcaption><b>smartphone.html</b><div class="subcaption">A “smartphone” that contains multiple rows of icons. <b>Hint:</b> the outer &lt;div&gt; container should be flexed in column mode.</div></figcaption>
+                        </figure>
+                        <figure>
+                            <a href="videos/05-loading-bar.mp4"><img class="img-med" src="images/05-loading-bar.png" alt="gallery screenshot"></a>
+                            <figcaption><b>loading-bar.html</b><div class="subcaption">use css animations to create your interpretation of a loading bar (it can look and behave however you want! <b>Hint:</b> set animation-fill-mode to forwards so your animation finishes without resetting</div></figcaption>
+                        </figure>
+                        <figure>
+                            <a href="videos/06-petting-zoo.mp4"><img class="img-med" src="images/06-petting-zoo.png" alt="gallery screenshot"></a>
+                            <figcaption><b>petting-zoo.html</b><div class="subcaption">Create 3 or more objects (images, divs, text, etc.) that animate in different sequences on a loop <b>Hint:</b> you can use the same animation keyframes, just change how long each of the three animations takes to make it look like 3 different animations!</div></figcaption>
                         </figure>
                     </div>
-
+                    <h4>Tips for getting started:</h4>
+                    <ul>
+                        <li>For help linking your files in your menu, check out the file-linking video in the catch-up guide</li>
+                        <li>Remember, you only need to create your CSS on one page: style.css. You can link that css stylesheet to any html file you want to apply your style to.</li>
+                    </ul>                  
                     <h4>How to submit:</h4>
-                    <p>Upload the three files to Assignment 02 on Canvas.</p>
-
+                    <p>Commit and Push your changes to GitHub using the GitHub Desktop app and paste the link to your <u>home page</u> in Assignment 04 in Canvas. Make sure the link you post is the link to the website, <strong>NOT</strong> the link to your Live Server version hosted locally:</p>
+                    <ul class="sublist">
+                        <li><span class="red">http://127.0.0.1:5500/docs/</span> (this is your localhost link. It’s not accessible online, so <strong><u>don't</u></strong> share this to Canvas)</li>
+                        <li><span class="green">https://username.github.io/your-repo/</span> (your home page link should look something like this! Share this one to the Canvas assignment.)</li>
+                    </ul>
                     <h4>How to receive full credit:</h4>
                     <ul class="compact">
-                        <li>I should be able to download and look at each of your uploaded files.</li>
-                        <li>Visually, your pages should like the screenshots.</li>
-                        <li>For the <span class="highlight">elements.html</span> file, your page should use the appropriate elements (h1, h2, h3, p, ul, etc.) as stated in the screenshot</li>
-                        <li>If you use images, make sure to use images that you find online that you link to. <i class="highlight">I won't be able to see images you have on your own computer</i>.</li>
-                    </ul>
-                       
-                    <h4>Notes for getting started:</h4>
-                    <ul>
-                        <li>Write clean code! Make sure you indent and nest your tags correctly, so that it's easy to tell what tags are inside of other tags, and whether or not you still need to close a tag</li>
-                        <li>You can use whatever colors, links, or images you'd like, <strong class="highlight">but the spacing and structure of each page should mirror the example screenshots</strong></li>
-                        <li>For your CSS styling, use <i class="highlight">in-document styling</i>  (write your CSS in between two <pre>&lt;style&gt;</pre> tags in the <pre>&lt;head&gt;</pre>) section of your .html file. (although typically, we write our CSS in <i class="highlight">separate documents</i>).</li>
-                        <li>If you get stuck, try to think about your problem in human language, and Google it!</li>
+                        <li>The link you submit should take me to your home page. MAKE SURE TO TEST YOUR LINK BEFORE SUBMITTING.</li>
+                        <li>Each link I click on in each page’s menu should link to the correct page.</li>
+                        <li>Your CSS styling should match the screenshots below</li>
                         <ul>
-                            <li>For example: if you don't know how to make a list with bullet points, you don't have to know exactly what that's called in HTML; you can just Google '<span class="highlight">How to make a bullet point list in HTML</span>.'</li>
+                            <li>Width of each &lt;body&gt; should be 70vw</li>
+                            <li>Content of the body should be in the center of the page</li>
+                            <li>Font should <strong>not</strong> be the default Times New Roman</li>
+                            <li>There should be a background color</li>
+                            <li>Feel free to use whatever colors or fonts you'd like!</li>
                         </ul>
                     </ul>
-                </div>
+                    
             </div>
         </section>
     </div>
 </body>
 </html>
 
-<!--https://app.slack.com/client/TTSTR963F/CTV4ZDYGN
+<!--https://app.slack.com/client/TTSTR963F/CTE3YEVGS
 
 https://codepen.io/dougrosman-->

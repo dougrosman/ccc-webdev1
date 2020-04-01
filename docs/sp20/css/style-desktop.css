@@ -37,6 +37,8 @@ figure {
     max-width: 90%;
     padding: 5px;
     border: 2px solid var(--light-black);
+    margin: 6px 0;
+    vertical-align: top;
 }
 
 figure:hover {
@@ -46,6 +48,7 @@ figure:hover {
 
 figcaption {
     text-align: center;
+    width: 270px;
 }
 
 p {
@@ -236,8 +239,8 @@ pre {
 
 .red { color: rgb(180, 0, 0); }
 .red-h:hover { background-color: rgb(180, 0, 0); }
-.orange { color: rgb(200, 120, 0); }
-.orange-h:hover { background-color: rgb(200, 120, 0); }
+.orange { color: rgb(210, 130, 0); }
+.orange-h:hover { background-color: rgb(210, 130, 0); }
 .yellow { color: rgb(220, 190, 30); }
 .yellow-h:hover { background-color: rgb(220, 190, 30); }
 .green { color: rgb(0, 160, 0); }
@@ -431,6 +434,18 @@ pre {
     background-color: unset;
     width: unset;
     text-align: center;
+}
+
+.folder {
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.subcaption {
+    font-size: .9em;
+    margin: 4px auto;
+    line-height: 1.1em;
+    width: 99%;
 }
 
 @media only screen  

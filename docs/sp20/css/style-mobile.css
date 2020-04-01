@@ -202,8 +202,8 @@
 
     .red { color: rgb(180, 0, 0); }
     .red-h:hover { background-color: rgb(180, 0, 0); }
-    .orange { color: rgb(200, 120, 0); }
-    .orange-h:hover { background-color: rgb(200, 120, 0); }
+    .orange { color: rgb(210, 130, 0); }
+    .orange-h:hover { background-color: rgb(210, 130, 0); }
     .yellow { color: rgb(220, 190, 30); }
     .yellow-h:hover { background-color: rgb(220, 190, 30); }
     .green { color: rgb(0, 160, 0); }
