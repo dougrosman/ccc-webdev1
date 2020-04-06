@@ -17,3 +17,10 @@ body {
 .cool {
     color: red;
 }
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin: 10px;
+}
