@@ -23,10 +23,18 @@ $(document).ready(function(){
             <a class="dropdown-item" href="/sp20/assignments/07-jquery/">07: jQuery + media</a>
          </div>
       </div>
-       <a class="menu-item yellow-h" href="/sp20/resources">Resources</a>
+      <a class="menu-item yellow-h" href="/sp20/resources">Resources</a>
       <a class="menu-item green-h" href="/sp20/lectures">Online Lectures</a>
       <a class="menu-item blue-h" href="https://codepen.io/dougrosman/collections" target="_blank">Codepen</a>
-      <a class="menu-item canvas-red-h" href="https://canvas.colum.edu/" target="_blank">Canvas</a>`);
+      <a class="menu-item canvas-red-h" href="https://canvas.colum.edu/" target="_blank">Canvas</a>`
+      );
+
+      $("head").append(`
+      <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+      <link rel="manifest" href="/favicon/site.webmanifest">`
+      );
    }
 
    // if production
@@ -47,19 +55,24 @@ $(document).ready(function(){
             <a class="dropdown-item" href="/ccc-webdev1/sp20/assignments/07-jquery/">07: jQuery + media</a>
          </div>
       </div>
-       <a class="menu-item yellow-h" href="/ccc-webdev1/sp20/resources">Resources</a>
+      <a class="menu-item yellow-h" href="/ccc-webdev1/sp20/resources">Resources</a>
       <a class="menu-item green-h" href="/ccc-webdev1/sp20/lectures">Online Lectures</a>
       <a class="menu-item blue-h" href="https://codepen.io/dougrosman/collections" target="_blank">Codepen</a>
-      <a class="menu-item canvas-red-h" href="https://canvas.colum.edu/" target="_blank">Canvas</a>`);
+      <a class="menu-item canvas-red-h" href="https://canvas.colum.edu/" target="_blank">Canvas</a>`
+      );
+
+      $("head").append(`
+      <link rel="apple-touch-icon" sizes="180x180" href="/ccc-webdev1/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/ccc-webdev1/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/ccc-webdev1/favicon/favicon-16x16.png">
+      <link rel="manifest" href="/ccc-webdev1/favicon/site.webmanifest">`
+      );
    }
 
 
    // inject favicon code into <head> of each page
 
-   $("head").append(`<link rel="apple-touch-icon" sizes="180x180" href="/ccc-webdev1/favicon/apple-touch-icon.png">
-   <link rel="icon" type="image/png" sizes="32x32" href="/ccc-webdev1/favicon/favicon-32x32.png">
-   <link rel="icon" type="image/png" sizes="16x16" href="/ccc-webdev1/favicon/favicon-16x16.png">
-   <link rel="manifest" href="/ccc-webdev1/favicon/site.webmanifest">`);
+   
     
 
 // video to-do: toggle in vanilla JS vs jquery
