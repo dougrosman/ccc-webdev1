@@ -546,7 +546,12 @@ pre {
     margin-top: 10px;
 }
 
-.module > ol, ul > li {
+.module > ol > li {
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.module > ul > li {
     margin-top: 1px;
     margin-bottom: 1px;
 }
