@@ -40,7 +40,7 @@
 
     figure {
         display: block;
-        padding: 0px;
+        padding: 4px;
         width: max-content;
         margin: 8px auto;
     }
@@ -350,12 +350,18 @@
         text-align: center;
     }
 
-    .img-lrg {
+    
+    .img-med {
         width: 300px;
         height: unset;
     }
-    
-    .img-med {
+
+    .img-med-lrg {
+        width: 300px;
+        height: unset;
+    }
+
+    .img-lrg {
         width: 300px;
         height: unset;
     }
@@ -398,7 +404,6 @@
 
     figure {
         display: block;
-        padding: 0px;
         width: max-content;
         margin: 8px auto;
     }
@@ -408,6 +413,7 @@
         object-position: left top;
         width: 100vh;
         height: 40vh;
+        
     }
 
     .download {
@@ -418,5 +424,10 @@
     
     .download > a {
         flex-basis: 50%;
+    }
+
+    .module {
+        /* width: 100%; */
+        max-width: 100%;
     }
   }
