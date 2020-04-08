@@ -54,7 +54,10 @@ $(document).ready(function(){
 
 
 
-       // automatically adds this menu to a dropdown-menu class
+   $("head").append(`<link rel="apple-touch-icon" sizes="180x180" href="/ccc-webdev1/favicon/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="/ccc-webdev1/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="/ccc-webdev1/favicon/favicon-16x16.png">
+   <link rel="manifest" href="/ccc-webdev1/favicon/site.webmanifest">`);
     
 
 // video to-do: toggle in vanilla JS vs jquery
