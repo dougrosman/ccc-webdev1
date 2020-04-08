@@ -365,6 +365,18 @@
         width: 300px;
         height: unset;
     }
+    .module {
+        max-width: 90%;
+    }
+/* 
+    .faq {
+        max-width: 300px;
+    } */
+
+    .faq > a{
+        width: max-content;
+        max-width: 99%;
+    }
 }
 
 @media only screen 
