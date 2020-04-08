@@ -555,9 +555,9 @@ pre {
     margin-top: 1px;
     margin-bottom: 1px;
 }
-.faq {
+/* .faq {
     width: 100%;
-}
+} */
 
 .faq > a {
     display: block;
@@ -566,6 +566,7 @@ pre {
     padding: 3px;
     border-radius: 3px;
     width: max-content;
+    max-width: 98%;
 }
 
 .faq > a:hover {
@@ -614,5 +615,16 @@ pre {
 
     .img-med-lrg {
         width: 400px;
+    }
+    .module {
+        display: block;
+        width: 96%;
+        /* max-width: 420px; */
+        /* border: 2px solid var(--dark-white); */
+        margin: 5px;
+        border-radius: 5px;
+        padding: 20px;
+        height: max-content;
+        /* background-color: orange; */
     }
   }
