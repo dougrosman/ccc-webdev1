@@ -7,29 +7,61 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style-desktop.css">
     <link rel="stylesheet" href="../css/style-mobile.css">
-    <title>Resources</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/ccc-webdev1/sp20/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/ccc-webdev1/sp20/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/ccc-webdev1/sp20/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/ccc-webdev1/sp20/favicon/site.webmanifest">
+    <script src="../../lib/jquery-3.4.1.min.js"></script>
+    <title>Online Lectures</title>
 </head>
 <body>
-    <a id="return" class="menu-item" href="../..">Return to Web Dev 1 Home</a>
+    
+    <!-- <a id="return" class="menu-item" href="../..">Back</a> -->
     <div id="wrapper">
+        <div id="preheader">
+            <a class="no-link-style" href=".."><h4>Web Development I</h4></a><br>
+            <a class="no-link-style" href=".."><h5>Columbia College Chicago | Spring 2020</h5></a>
+        </div>
+        <h1 id="site-title" class="page-title"><a href="." class="no-link-style">Online Lectures</a></h1>
         <header class="container flex-column">
-            <h1 id="site-title"><a href=".." class="no-link-style">Web Development I</a></h1>
-            <h2 id="site-subtitle">Columbia College Chicago | Spring 2020</h2>
             <nav id="main-menu" class="flex-row">
-                <a class="menu-item red" href="../about">About</a>
-                <a class="menu-item orange" href="../assignments">Assignments</a>
-                <a class="menu-item yellow" href=".">Resources</a>
-                <a class="menu-item green" href="../lectures">Lecture Slides</a>
-                <a class="menu-item blue" href="../slack">Slack</a>
-                <a class="menu-item purple" href="../codepen">Codepen</a>
+                <a class="menu-item white-h" href="..">Home</a>
+                <a class="menu-item red-h" href="../about">About</a>
+                <div class="dropdown"></div>
+                <a class="menu-item yellow-h" href=".">Resources</a>
+                <a class="menu-item green-h" href="../lectures">Online Lectures</a>
+                <a class="menu-item blue-h" href="https://codepen.io/dougrosman/collections">Codepen</a>
+                <a class="menu-item purple-h" href="https://discord.gg/zeyvm6p">Discord</a>
+                <a class="menu-item canvas-red-h" href="https://canvas.colum.edu/" target="_blank">Canvas</a>
             </nav>
         </header>
 
+        <p>Attending lecture online is not mandatory, but in order to be marked present on Canvas you must do two things:</p>
+        <br>
+        <ol>
+            <li>If you did not attend class, please DM me in Discord to check in on Monday either before or after lecture, or on Tuesday.</li>
+            <li>Whether or not you attended, you must complete a quick two-question Canvas quiz based on the lecture. Quizzes will be posted below their respective videos.</li>
+        </ol>
         <section class="container flex-row">
             
-                
-            
+            <div class="assignment">
+                <h3>Section 04 (12:30pm)</h3>
+                <iframe width="360" height="202" src="https://www.youtube.com/embed/u3wrj9EGUD4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h5>Lecture 01 (04/06/20): Welcome Back + jQuery Introduction</h5>
+                <h5>Canvas attendance quiz coming soon</h5>
+            </div>
+            <div class="assignment">
+                <h3>Section 03 (3:30pm)</h3>
+                <iframe width="360" height="202" src="https://www.youtube.com/embed/T3lLsb79qng" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h5>Lecture 01 (04/06/20): Welcome Back + jQuery Introduction</h5>
+                <h5>Canvas attendance quiz coming soon</h5>
+            </div>
         </section>
     </div>
+    <script src="../scripts/main.js"></script>
 </body>
 </html>
+
+<!--https://app.slack.com/client/TTSTR963F/CTV4ZDYGN
+
+https://codepen.io/dougrosman-->
