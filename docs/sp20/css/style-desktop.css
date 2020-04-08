@@ -517,7 +517,7 @@ pre {
     display: block;
     width: max-content;
     max-width: 800px;
-    border: 2px solid var(--dark-white);
+    /* border: 2px solid var(--dark-white); */
     margin: 5px;
     border-radius: 5px;
     padding: 20px;
@@ -569,15 +569,17 @@ pre {
     position: fixed;
     bottom: 20px;
     right: 10px;
-    padding: 3px 5px;
+    padding: 3px 8px;
     border-radius: 8px;
     background-color: var(--dark-white);
     color: var(--light-black);
     opacity: .5;
+    z-index: 100;
+    border: 1px solid var(--light-black);
 }
 
 .back-to-top:hover {
-    opacity: 1;
+    opacity: .75;
     transition: opacity .5s;
     cursor: default;
 }
@@ -598,8 +600,8 @@ pre {
         flex-basis: 100%;
     }
 
-    .module {
-        border: 2px solid rgba(0, 0, 0, 0);
+    .assignment {
+        border-width: 1px;
     }
 
     .img-med-lrg {

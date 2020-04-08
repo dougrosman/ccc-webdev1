@@ -3,7 +3,7 @@ $(document).ready(function(){
 
    // edit one menu here that gets applied to every page simultaneously
    let currUrl = window.location.href;
-   console.log(currUrl);
+   $("body").append(`<div class="back-to-top">⇧</div>`);
 
    // if working in live server
    if(currUrl[7] === '1'){
@@ -69,7 +69,7 @@ $(document).ready(function(){
       );
    }
 
-   $("body").append(`<div class="back-to-top">⇧</div>`);
+   
 
    $(".back-to-top").click(function(){
       window.scrollTo(0, 0);
