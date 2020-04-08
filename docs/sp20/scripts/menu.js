@@ -23,8 +23,8 @@ $(document).ready(function(){
             <a class="dropdown-item" href="/sp20/assignments/07-jquery/">07: jQuery + media</a>
          </div>
       </div>
-       <a class="menu-item yellow-h" href="ccc-webdev1/sp20/resources">Resources</a>
-      <a class="menu-item green-h" href="ccc-webdev1/sp20/lectures">Online Lectures</a>
+       <a class="menu-item yellow-h" href="/sp20/resources">Resources</a>
+      <a class="menu-item green-h" href="/sp20/lectures">Online Lectures</a>
       <a class="menu-item blue-h" href="https://codepen.io/dougrosman/collections">Codepen</a>
       <a class="menu-item canvas-red-h" href="https://canvas.colum.edu/" target="_blank">Canvas</a>`);
    }
