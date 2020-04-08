@@ -20,7 +20,7 @@ $(document).ready(function(){
             <a class="dropdown-item" href="/sp20/assignments/04-portfolio-2">04: Portfolio II</a>
             <a class="dropdown-item" href="/sp20/assignments/05-advanced-css/">05: Advanced CSS</a>
             <a class="dropdown-item" href="/sp20/assignments/06-intro-javascript/">06: JavaScript Intro</a>
-            <a class="dropdown-item" href="/sp20/assignments/07a-jquery-tutorials/">07: jQuery + media</a>
+            <a class="dropdown-item" href="/sp20/assignments/07a-jquery-tutorials/">07a: jQuery Tutorials</a>
          </div>
       </div>
       <a class="menu-item yellow-h" href="/sp20/resources">Resources</a>
