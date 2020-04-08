@@ -26,6 +26,7 @@ a {
     width: max-content;
     font-size: calc(2em + 5vw);
     line-height: 1.2em;
+    
 }
 
 .subtitle {
@@ -42,9 +43,8 @@ a {
 
 #wrapper {
     width: 100vw;
-    max-width: 900px;
-    margin: 20px auto;
-    
+    /* max-width: 1800px; */
+    margin: 20px auto;    
 }
 
 #semester-menu {
@@ -66,6 +66,7 @@ a {
     align-items: center;
     font-size: calc(1.25em + 1vw);
     transition: background-color .5s, color .5s;
+    text-align: center;
 }
 
 .semester:hover {
