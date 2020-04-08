@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+
+   // edit one menu here that gets applied to every page simultaneously
    let currUrl = window.location.href;
    console.log(currUrl);
 
@@ -45,14 +47,14 @@ $(document).ready(function(){
             <a class="dropdown-item" href="/ccc-webdev1/sp20/assignments/07-jquery/">07: jQuery + media</a>
          </div>
       </div>
-       <a class="menu-item yellow-h" href="ccc-webdev1/ccc-webdev1/sp20/resources">Resources</a>
-      <a class="menu-item green-h" href="ccc-webdev1/ccc-webdev1/sp20/lectures">Online Lectures</a>
+       <a class="menu-item yellow-h" href="/ccc-webdev1/sp20/resources">Resources</a>
+      <a class="menu-item green-h" href="/ccc-webdev1/sp20/lectures">Online Lectures</a>
       <a class="menu-item blue-h" href="https://codepen.io/dougrosman/collections">Codepen</a>
       <a class="menu-item canvas-red-h" href="https://canvas.colum.edu/" target="_blank">Canvas</a>`);
-
    }
 
 
+   // inject favicon code into <head> of each page
 
    $("head").append(`<link rel="apple-touch-icon" sizes="180x180" href="/ccc-webdev1/favicon/apple-touch-icon.png">
    <link rel="icon" type="image/png" sizes="32x32" href="/ccc-webdev1/favicon/favicon-32x32.png">
