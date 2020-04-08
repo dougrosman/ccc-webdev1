@@ -69,12 +69,24 @@ $(document).ready(function(){
       );
    }
 
+   $("body").append(`<div class="back-to-top">⇧</div>`);
 
-   // inject favicon code into <head> of each page
-
-   
-    
-
+   $(".back-to-top").click(function(){
+      window.scrollTo(0, 0);
+   });
+  
 // video to-do: toggle in vanilla JS vs jquery
 
 });
+
+// let backToTop = document.createElement("div");
+
+// backToTop.innerHTML = "⇧";
+// backToTop.classList.add("back-to-top");
+// document.body.appendChild(backToTop);
+
+// let btt = document.querySelector('.back-to-top');
+
+// btt.addEventListener('click', function(){
+//    window.scrollTo(0, 0);
+// });
