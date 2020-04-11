@@ -80,6 +80,11 @@ ul > ul > li {
     margin-left: 35px;
 }
 
+li > ol {
+    list-style: none;
+}
+
+
 figure > a > img {
     object-fit: cover;
     object-position: left;
@@ -591,6 +596,10 @@ pre {
     opacity: .75;
     transition: opacity .5s;
     cursor: default;
+}
+
+.no-list-style {
+    list-style-type: none;
 }
 
 @media only screen  
