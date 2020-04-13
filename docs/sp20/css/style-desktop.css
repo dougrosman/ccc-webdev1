@@ -31,6 +31,11 @@ header {
     text-align: center;
 }
 
+#sketch {
+    position: absolute;
+    z-index: -1;
+}
+
 figure {
     display: inline-block;
     width: max-content;
