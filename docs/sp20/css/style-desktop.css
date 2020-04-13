@@ -530,6 +530,10 @@ pre {
     /* background-color: orange; */
 }
 
+.resource {
+    max-width: 45%;
+}
+
 .module > h2 {
     font-size: 1.5em;
     font-weight: 800;
@@ -602,6 +606,14 @@ pre {
     list-style-type: none;
 }
 
+.square-bullets > li { list-style: '\2610'; padding-left: 6px; }
+.sparkles > li { list-style-type: '\2728'; padding-left: 6px; }
+.truck > li{ list-style-type: '\26DF'; padding-left: 6px;}
+
+.small {
+    font-size: 12px;
+}
+
 @media only screen  
   and (max-width: 700px)   {
     .download {
@@ -635,5 +647,9 @@ pre {
         padding: 20px;
         height: max-content;
         /* background-color: orange; */
+    }
+    .resource {
+        min-width: 100%;
+        max-width: 100%;
     }
   }
