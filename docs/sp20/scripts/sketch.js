@@ -8,5 +8,6 @@ function setup() {
 
 function draw() {
 
-    ellipse(mouseX, mouseY, 10, 10);
+    // fill(random(255), random(255), random(255))
+    ellipse(mouseX, mouseY, mouseX, mouseX);
 }
