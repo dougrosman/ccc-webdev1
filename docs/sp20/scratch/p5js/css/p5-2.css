@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial;
+    background-color: pink;
+}
+
+h1 {
+    margin: 100px auto;
+    width: max-content;
+    background-color: orange;
+}
+
+#sketch {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

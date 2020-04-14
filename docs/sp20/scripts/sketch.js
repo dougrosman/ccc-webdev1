@@ -1,4 +1,4 @@
-let canvas;
+let canvas; // stil undefined at this
 
 function setup() {
     canvas = createCanvas(windowWidth, windowHeight);

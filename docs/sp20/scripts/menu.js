@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-
    // edit one menu here that gets applied to every page simultaneously
    let currUrl = window.location.href;
    $("body").append(`<div class="back-to-top">⇧</div>`);
