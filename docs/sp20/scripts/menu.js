@@ -20,6 +20,7 @@ $(document).ready(function(){
             <a class="dropdown-item" href="/sp20/assignments/05-advanced-css/">05: Advanced CSS</a>
             <a class="dropdown-item" href="/sp20/assignments/06-intro-javascript/">06: JavaScript Intro</a>
             <a class="dropdown-item" href="/sp20/assignments/07a-jquery-tutorials/">07a: jQuery Tutorials</a>
+            <a class="dropdown-item" href="/sp20/assignments/final-project/">Final Project</a>
          </div>
       </div>
       <a class="menu-item yellow-h" href="/sp20/resources">Resources</a>
@@ -52,6 +53,7 @@ $(document).ready(function(){
             <a class="dropdown-item" href="/ccc-webdev1/sp20/assignments/05-advanced-css/">05: Advanced CSS</a>
             <a class="dropdown-item" href="/ccc-webdev1/sp20/assignments/06-intro-javascript/">06: JavaScript Intro</a>
             <a class="dropdown-item" href="/ccc-webdev1/sp20/assignments/07a-jquery-tutorials/">07a: jQuery Tutorials</a>
+            <a class="dropdown-item" href="/ccc-webdev1/sp20/assignments/final-project/">Final Project</a>
          </div>
       </div>
       <a class="menu-item yellow-h" href="/ccc-webdev1/sp20/resources">Resources</a>
