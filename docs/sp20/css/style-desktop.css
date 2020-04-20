@@ -91,6 +91,12 @@ li > ol {
     list-style: none;
 }
 
+.video-center {
+    background-color: blue;
+    width: 400px;
+    display: block;
+    margin: 20px auto;
+}
 
 figure > a > img {
     object-fit: cover;
