@@ -440,6 +440,11 @@
 
     .module {
         /* width: 100%; */
+        max-width: 97%;
+    }
+
+    .resource {
         max-width: 100%;
+        margin: 10px auto;
     }
   }
