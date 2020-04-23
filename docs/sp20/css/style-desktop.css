@@ -657,6 +657,7 @@ pre {
 .atom > li { list-style-type: '\269B'; padding-left: 6px; }
 .truck > li{ list-style-type: '\2604'; padding-left: 6px;}
 .hammer > li{ list-style-type: '\2692'; padding-left: 6px;}
+.triangle > li{ list-style-type: '\22B3'; padding-left: 6px;}
 
 .small {
     font-size: 14px;
