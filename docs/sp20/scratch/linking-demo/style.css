@@ -1,0 +1,15 @@
+#title {
+    font-family: Arial;
+    color: purple;
+  }
+  
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+  }
+  
+  .cool {
+    border: 3px solid blue;
+  }
+  
