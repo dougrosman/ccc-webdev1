@@ -235,12 +235,38 @@ pre {
 
 .center-container {
     /* width: max-content; */
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    max-width: 1060px;
+    justify-content: center; */
+    column-count: 3;
+    /* width: 1060px; */
     margin: 0 auto;
+    /* border: 2px solid green; */
+    padding: 20px;
 }
+
+.center-container .resource {
+    width: 90%;
+    box-shadow: 3px 4px 10px 1px black;
+    overflow: hidden;
+    /* overflow: scroll; */
+    /* border: 2px solid var(--dark-white); */
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+
+.announcement {
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 3px 4px 10px 1px black;
+    border-radius: 10px;
+    padding: 20px;
+    animation-iteration-count: 3;
+}
+
+
 
 .flex-column {
     display: flex;
@@ -563,44 +589,33 @@ pre {
     /* background-color: orange; */
 }
 
-.resource {
-    /* width: 98%; */
-    width: 310px;
-    /* border: 3px solid lightpink; */
-    box-shadow: 3px 4px 10px 1px black;
-    margin: 10px;
-    display: inline-block;
-    vertical-align: top;
-
-}
-
-.module > h2 {
+.module, .resource > h2 {
     font-size: 1.5em;
     font-weight: 800;
     margin-bottom: .5em;
 }
 
-.module > h3 {
+.module, .resource > h3 {
     font-size: 1.2em;
     font-weight: 800;
     /* margin: .5em 0 .25em 0; */
 }
 
-.module > p {
+.module, .resource > p {
     font-size: 16px;
     margin-top: 8px;
 }
 
-.module > ol, ul {
+.module, .resource > ol, ul {
     margin-top: 10px;
 }
 
-.module > ol > li {
+.module, .resource > ol > li {
     margin-top: 1px;
     margin-bottom: 1px;
 }
 
-.module > ul > li {
+.module, .resource > ul > li {
     margin-top: 1px;
     margin-bottom: 1px;
 }
@@ -733,7 +748,7 @@ th, td {
         /* background-color: orange; */
     }
     .resource {
-        min-width: 90%;
-        margin: 10px auto;
+        /* min-width: 90%;
+        margin: 10px auto; */
     }
   }
