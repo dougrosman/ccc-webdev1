@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sound.css">
+    <script src="../../../lib/jquery-3.4.1.min.js"></script>
+    <title>Sound stuff</title>
+</head>
+<body>
+    <h1>sound stuff</h1>
+
+    <audio id="player" controls>
+        <source src="audio/tunez.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio> 
+
+
+    <!-- <img id="play-button" src="images/hot_wheels_computer.jpg" alt="the best computer" onclick="document.getElementById('player').play()">
+
+    <button onclick="document.getElementById('player').pause()">plz stop</button> -->
+
+    <img id="play-button" src="images/hot_wheels_computer.jpg" alt="the best computer">
+
+    <button onclick="document.getElementById('player').pause()">plz stop</button>
+    
+    
+    
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+
+            console.log($('#player'));
+
+            $("#play-button").click(function(){
+
+
+                if($("#player")[0].paused) {
+                    $("#player")[0].play();
+                    console.log($("#player")[0].paused)
+                } else {
+                    console.log($("#player")[0].paused)
+                    $("#player")[0].pause();
+                }
+            })
+
+
+        })
+    </script>
+    
+</body>
+</html>
