@@ -1,0 +1,48 @@
+<html>
+  <link rel="stylesheet" type="text/css" href="../css/animate.css" media="screen"/>
+  <link rel="stylesheet" type="text/css" href="../css/final_style.css" media="screen"/>
+  <link href="https://fonts.googleapis.com/css?family=Overpass:300,900&display=swap" rel="stylesheet">
+  <!-- <script src="final.js"></script> -->
+  <script src="../lib/jquery-3.5.1.min.js"></script>
+  <script src="../lib/p5.min.js"></script>
+  <script src="../lib/spritzer/Spritzer.js"></script>
+  <link rel="stylesheet" href="../lib/spritzer/Spritzer.css">
+  
+  <head>
+    <title>Final Project</title>
+    <meta content="">
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <news>error</news>
+  
+  <script>
+    var news = "3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 1 1 1 1 1";
+    var feed = ["news", "privacy", "coronavirus", "cryptocurrency", "worldnews", "technology"];
+    var h1 = document.body.appendChild(document.createElement('h1'));
+    var newscast = new Spritzer(h1);
+    var wpm = 600;
+    var pauseLength = 3;
+    for(i = 0; i < feed.length; i++) {
+      $.ajax({
+        type: 'GET',
+        url: "https://api.rss2json.com/v1/api.json?rss_url=" + "https://www.reddit.com/r/" + feed[i] + ".rss",
+        dataType: 'jsonp',
+        async: false,
+        success: function(response) {
+          console.log(response);
+          $.each(response.items, function(index) {
+            news += " " + response.items[index].title;
+            for(p = 0; p < pauseLength; p++) {
+              news += " |";
+            }
+          });
+          newscast.render(news, wpm);
+        }
+      });
+   }
+  </script>
+  </body>
+</html>
