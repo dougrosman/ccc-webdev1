@@ -1,0 +1,40 @@
+body {
+    background-color: black;
+    background-image: url("../final/background.png");
+    background-repeat: repeat;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.spritzed {
+    color: white;
+    position: relative;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 6em;
+    top: 41%
+}
+
+.spritzed::before, .spritzed::after {
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -1px;
+    height: 10px;
+    width: 2px;
+    top: 0;
+}
+
+.spritzed > div {
+    position: absolute;
+}
+
+.highlight {
+    color: red;
+    text-shadow: red;
+}
+
+news {
+    display: none;
+}

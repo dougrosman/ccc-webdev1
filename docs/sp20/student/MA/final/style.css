@@ -1,0 +1,47 @@
+body {
+    background-color: black;
+}
+
+.logo {
+    color: white;
+    font-family: 'Overpass', Roboto, sans-serif;
+    font-size: 48pt; 
+    font-weight: 900;
+    margin-left: 2.5%;
+    margin-top: 2.5%;
+    margin-right: 70%; /* lol this is hacky but i'm lazy */
+}
+
+.para {
+    color: white;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 36pt;
+    margin-left: 2.5%;
+    line-height: 1.2em;;
+}
+
+.menu {
+    color: white;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 36pt;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    bottom: 100px;
+    left: 0px;
+    right: 0px;
+}
+
+.gallery1{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery2{
+    display: flex;
+}
+
