@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Shadows Into Light Two', sans-serif;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 98vh;
+    width: 98vw;
+    justify-content: center;
+    margin: 1vh auto;
+    border: 2px solid lightblue;
+
+}
+#header {
+    width: 90vw;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid pink;
+    margin: 1vh;
+}
+
+#title {
+    color: lightskyblue;
+    font-size: 3em;
+}
+
+#sketch-stuff {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    height: 80%;
+    border: 2px solid purple;
+}
+
+#remaining-names {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    border: 2px solid green;
+}
+
+#left-section {
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    margin: 2em 0;
+}
+
+#warning {
+    /* position: relative; */
+    /* display: none; */
+    color: red;
+    font-size: 12px;
+    font-family: arial;
+
+}
+
+#sketch-parent {
+    /* border: 2px solid coral; */
+    width: 80%;
+    height: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+#roll-it {
+    margin: 1% 0;
+    padding: .5%;
+}
